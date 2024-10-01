@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.header__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-box {
+    display: flex;
+    gap: 30px;
+}
+
+.list__link {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #000;
+}
+
+.sidebar {
+    width: 250px;
+    height: 130vh;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+    top: 0;
+    right: 0;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+.sidebar .list__link {
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.welcome {
+    width: 100%;
+    background-image: url(../img/Section.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.main__inner {
+    padding: 200px 0;
+}
+
+.main__text {
+    width: 500px;
+}
+
+.main__title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.main__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.btn-1 {
+    width: 215px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.sponsore__inner {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.flakons__text {
+    display: flex;
+    justify-content: center;
+}
+
+.flakons__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.title {
+    padding: 80px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #000;
+}
+
+.card-f {
+    width: 283px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ffff;
+    box-shadow: -5px 10px 45px rgba(0, 0, 0, 0.3);
+}
+
+.flakons__sub {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about {
+    margin: 130px 0;
+    background-color: #000;
+    background-image: url(../img/Prev.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.about__inner {
+    padding: 130px 0;
+}
+
+.about__text {
+    width: 500px;
+}
+
+.about__title {
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: #ffff;
+}
+
+.about__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.btn-2 {
+    width: 128px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.open {
+    cursor: pointer;
+    display: none;
+}
+
+.close {
+    cursor: pointer;
+}
+
+@media(max-width: 1150px) {
+    .flakons__card {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 770px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .social-box {
+        display: none;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .main__text {
+        width: 320px;
+    }
+
+    .main__title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .main__desc {
+        font-size: 16px;
+        font-weight: 25px;
+    }
+
+    .btn-1 {
+        width: 160px;
+    }
+}
+
+@media(max-width: 560px) {
+    .about__title {
+        font-size: 28px;
+        line-height: 45px;
+    }
+    
+    .about__desc {
+        font-size: 14px;
+    }
+
+    .about__text {
+        width: 300px;
+    }
+
+    .kilian {
+        width: 40%;
+    }
+
+    .louvis-viton {
+        width: 40%;
+    }
+
+    .creed {
+        width: 40%;
+    }
+
+    .xerjoff {
+        width: 40%;
+    }
+
+    .parfums {
+        width: 40%;
+    }
+
+    .nishane {
+        width: 40%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .flakons__card {
+        margin: 0 17%;
+    }
+}
+
+@media(max-width: 377px) {
+    .flakons__card {
+        margin: 0 10%;
+    }
+
+    .sponsore__inner {
+        margin: 0 auto;
+    }
+}
